@@ -1,0 +1,12 @@
+books_dir: "/Users/allenhuang/Library/Mobile Documents/com~apple~CloudDocs/ProcyonNexus_Assets/Books"
+
+tts:
+  engine: "google"
+  voice: "cmn-TW-Wavenet-A" # Taiwanese female voice (Google Cloud TTS)
+  speaking_rate: 1.0        # 正常語速
+
+rewriter:
+  llm_provider: "google"
+  model: "gemini-1.5-pro-latest" # 使用較強的 Gemini 1.5 Pro 來維持改寫品質
+  temperature: 0.7
+  max_chunk_chars: 8000
