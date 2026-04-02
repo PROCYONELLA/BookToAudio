@@ -1,9 +1,13 @@
 books_dir: "/Users/allenhuang/Library/Mobile Documents/com~apple~CloudDocs/ProcyonNexus_Assets/Books"
 
 tts:
-  engine: "google"
-  voice: "cmn-TW-Wavenet-A" # Taiwanese female voice (Google Cloud TTS)
-  speaking_rate: 1.0        # 正常語速
+  engine: "gpt-sovits"
+  # 此處指定了您提供的參考音檔
+  ref_audio: "/Users/allenhuang/My Stuff/ProcyonNexus/.claude/scripts/audiobook/voice_ref/seg_08.mp3"
+  # GPT-SoVITS 必須提供「參考音檔對應的真實逐字稿文字」，請務必修改此欄位以符合 seg_08.mp3 裡的內容！
+  ref_text: "請在這裡填寫 seg_08.mp3 中實際唸出來的文字內容"
+  prompt_language: "zh"
+  text_language: "zh"
 
 rewriter:
   llm_provider: "google"
